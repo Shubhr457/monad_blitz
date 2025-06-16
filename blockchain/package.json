@@ -1,0 +1,27 @@
+{
+  "name": "chainluck",
+  "version": "1.0.0",
+  "description": "ChainLuck - Decentralized Lucky Cashback Rewards",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx hardhat test",
+    "test:v2": "npx hardhat test test/ChainLuckVaultV2.test.js",
+    "compile": "npx hardhat compile",
+    "deploy": "npx hardhat run scripts/deploy.js --network monad",
+    "deploy:v2": "npx hardhat run scripts/deploy-v2.js --network sepolia",
+    "deploy:monad": "npx hardhat run scripts/deploy-monad-with-mocks.js --network monad",
+    "verify": "npx hardhat verify --network monad"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^4.0.0",
+    "chai": "^4.3.7",
+    "hardhat": "^2.19.0",
+    "mocha": "^10.2.0"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^5.3.0",
+    "@chainlink/contracts": "^1.2.0",
+    "dotenv": "^16.5.0",
+    "ethers": "^6.8.0"
+  }
+}

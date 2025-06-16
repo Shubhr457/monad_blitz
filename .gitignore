@@ -1,0 +1,23 @@
+# Node.js dependencies
+node_modules/
+package-lock.json
+
+# Hardhat build artifacts and cache
+artifacts/
+cache/
+
+# Environment variables
+.env
+
+# Hardhat deployment artifacts
+deployment.json
+
+# Editor and OS files
+.DS_Store
+.vscode/
+.idea/
+
+# Logs and temporary files
+*.log
+*.log.*
+tmp/
